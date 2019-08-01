@@ -1,1 +1,281 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #f3f3a4;
+}
+#profile-pic {
+  width: 30%;
+}
+/*header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+header .left-side {
+  width: 49%;
+  text-align: center;
+  border: 1px solid green;
+}
+header .left-side nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+header .left-side nav a {
+  text-decoration: none;
+  color: green;
+}
+header .left-side h1 {
+  font-size: 40px;
+  padding: 10%;
+}
+header .left-side p {
+  font-size: 20px;
+  padding: 20px;
+}
+header .left-side button {
+  padding: 10px 20px 10px 20px;
+}
+header .right-side {
+  width: 49%;
+  border: 1px solid blue;
+}
+header .right-side img {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#profile-pic {
+  width: 60%;
+}
+.profile {
+  border: 1px solid brown;
+}
+.profile h2 {
+  padding: 2%;
+  font-size: 30px;
+}
+.profile p {
+  padding: 2%;
+  font-size: 20px;
+}
+section .education .ed {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+}
+section .education .ed .ed1 {
+  border: 1px solid blue;
+  width: 49%;
+  padding: 3%;
+}
+section .education .ed .ed1 h1 {
+  font-size: 25px;
+}
+section .education .ed .ed1 h2 {
+  font-size: 24px;
+}
+section .education .ed .ed1 p {
+  font-size: 20px;
+}
+section .education .ed .ed2 {
+  border: 1px solid blue;
+  width: 49%;
+  padding: 3%;
+}
+section .education .ed .ed2 h1 {
+  font-size: 25px;
+}
+section .education .ed .ed2 h2 {
+  font-size: 24px;
+}
+section .education .ed .ed2 p {
+  font-size: 20px;
+}
+section .work {
+  border: 1px solid black;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+section .work .work1 {
+  border: 1px solid black;
+}
+section .work .work1 h1 {
+  font-size: 25px;
+}
+section .work .work1 h2 {
+  font-size: 24px;
+}
+section .work .work1 ul {
+  font-size: 20px;
+}
+section .work .work2 {
+  border: 1px solid black;
+}
+section .work .work2 h1 {
+  font-size: 25px;
+}
+section .work .work2 h2 {
+  font-size: 24px;
+}
+section .work .work2 ul {
+  font-size: 20px;
+}
+section .myskills {
+  border: 1px solid black;
+}
+section .myskills h2 {
+  font-size: 24px;
+}
+section .myskills ul {
+  font-size: 20px;
+}
+section .contact {
+  border: 1px solid black;
+}
+section .contact h2 {
+  font-size: 24px;
+}
+section .contact ul {
+  font-size: 20px;
+}
