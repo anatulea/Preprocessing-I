@@ -178,17 +178,11 @@ body {
 	background-color: rgb(243, 243, 164);
 
 }
-
-
 .container {
 	width: 880px;
 	margin: 0px auto;
 
-	@media(max-width: 500px) {
-		background-color: aquamarine;
-		display: flex;
-		flex-direction: column;
-	}
+
 
 	#profile-pic {
 		width: 30%
@@ -200,11 +194,6 @@ body {
 		flex-direction: row;
 		justify-content: center;
 
-		@media(max-width: 500px) {
-			background-color: aquamarine;
-			display: flex;
-			flex-direction: column;
-		}
 
 		.left-side {
 			width: 49%;
@@ -283,16 +272,12 @@ body {
 	}
 
 
-	section .education {
+	 .education {
+		margin:50px 0px 50px 0px;
 
 		.ed {
 			.boxstyle();
 
-			@media(max-width: 500px) {
-				background-color: aquamarine;
-				display: flex;
-				flex-direction: column;
-			}
 
 
 			.ed1 {
@@ -334,12 +319,6 @@ body {
 	section .work {
 		.wk {
 			.boxstyle();
-
-			@media(max-width: 500px) {
-				background-color: aquamarine;
-				display: flex;
-				flex-direction: column;
-			}
 
 
 			.work1 {
@@ -414,4 +393,228 @@ body {
 	}
 
 
+}
+
+@media(max-width: 500px) {
+	background-color: aquamarine;
+	display: flex;
+	flex-direction: column;
+
+
+	.container {
+		width: 500px;
+		margin: 0px auto;
+
+
+
+		#profile-pic {
+			width: 30%
+		}
+
+
+		header {
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: center;
+
+
+			.left-side {
+				width: 49%;
+				text-align: center;
+				border: 1px solid green;
+
+				nav {
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					margin-top: 10%;
+					margin-bottom: 10%;
+
+					a {
+						text-decoration: none;
+						color: green;
+					}
+				}
+
+				h1 {
+					font-size: 40px;
+					padding: 10%;
+
+				}
+
+				p {
+					font-size: @psize;
+					padding: 20px;
+
+				}
+
+				button {
+					padding: 10px 20px 10px 20px;
+				}
+
+			}
+
+			.right-side {
+				width: 49%;
+				border: 1px solid blue;
+
+				img {
+					margin-left: 20%;
+					margin-right: 20%;
+
+
+				}
+			}
+
+
+		}
+
+		#profile-pic {
+			width: 60%
+		}
+
+
+
+		.about-me {
+			.blockstyle();
+
+			.profile {
+				border: 1px solid brown;
+
+				h2 {
+					padding: 2%;
+					font-size: @h2size;
+				}
+
+				p {
+					padding: 2%;
+					font-size: @psize;
+				}
+			}
+		}
+
+
+		 .education {
+			margin:50px 0px 50px 0px;
+
+			.ed {
+				.boxstyle();
+
+
+
+				.ed1 {
+
+					.containerstyle();
+
+					h1 {
+						font-size: @h1size
+					}
+
+					h2 {
+						font-size: @h2size;
+					}
+
+					p {
+						font-size: @psize;
+					}
+				}
+
+				.ed2 {
+
+					.containerstyle();
+
+					h1 {
+						font-size: @h1size
+					}
+
+					h2 {
+						font-size: @h2size;
+					}
+
+					p {
+						font-size: @psize;
+					}
+				}
+			}
+		}
+
+		section .work {
+			.wk {
+				.boxstyle();
+
+
+				.work1 {
+					.containerstyle();
+
+					h1 {
+						font-size: @h1size
+					}
+
+					h2 {
+						font-size: @h2size;
+					}
+
+					ul {
+						list-style-type: circle;
+						font-size: @psize;
+					}
+
+
+				}
+
+				.work2 {
+					.containerstyle();
+
+					h1 {
+						font-size: @h1size
+					}
+
+					h2 {
+						font-size: @h2size;
+					}
+
+					ul {
+						list-style-type: circle;
+						font-size: @psize;
+					}
+
+				}
+			}
+		}
+
+		section .myskills {
+			.blockstyle();
+			border: 1px solid black;
+			padding: 2%;
+
+			h2 {
+				font-size: @h2size;
+			}
+
+			ul {
+				list-style-type: circle;
+				font-size: @psize;
+			}
+		}
+
+		footer {
+			.blockstyle();
+
+			.contact {
+
+				h2 {
+					font-size: @h1size;
+					margin-left: 4%;
+				}
+
+				ul {
+					margin-left: 4%;
+					font-size: @psize;
+				}
+			}
+		}
+
+
+	}
 }
