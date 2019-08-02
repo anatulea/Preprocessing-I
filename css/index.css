@@ -130,152 +130,244 @@ table {
 * {
   box-sizing: border-box;
 }
+.containerstyle {
+  border: 1px solid green;
+  background-color: gold;
+  border-radius: 5%;
+  width: 49%;
+  padding: 3%;
+}
+.boxstyle {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0px auto;
+  width: 100%;
+}
+.blockstyle {
+  border: 1px solid green;
+  background-color: #5cb9b9;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 100%;
+}
 html,
 body {
   height: 100%;
   background-color: #f3f3a4;
 }
-#profile-pic {
+.container {
+  width: 880px;
+  margin: 0px auto;
+}
+@media (max-width: 500px) {
+  .container {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container #profile-pic {
   width: 30%;
 }
-/*header {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}*/
-header {
+.container header {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-header .left-side {
+@media (max-width: 500px) {
+  .container header {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container header .left-side {
   width: 49%;
   text-align: center;
   border: 1px solid green;
 }
-header .left-side nav {
+.container header .left-side nav {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 10%;
   margin-bottom: 10%;
 }
-header .left-side nav a {
+.container header .left-side nav a {
   text-decoration: none;
   color: green;
 }
-header .left-side h1 {
+.container header .left-side h1 {
   font-size: 40px;
   padding: 10%;
 }
-header .left-side p {
+.container header .left-side p {
   font-size: 20px;
   padding: 20px;
 }
-header .left-side button {
+.container header .left-side button {
   padding: 10px 20px 10px 20px;
 }
-header .right-side {
+.container header .right-side {
   width: 49%;
   border: 1px solid blue;
 }
-header .right-side img {
+.container header .right-side img {
   margin-left: 20%;
   margin-right: 20%;
 }
-#profile-pic {
+.container #profile-pic {
   width: 60%;
 }
-.profile {
+.container .about-me {
+  border: 1px solid green;
+  background-color: #5cb9b9;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 100%;
+}
+.container .about-me .profile {
   border: 1px solid brown;
 }
-.profile h2 {
+.container .about-me .profile h2 {
   padding: 2%;
-  font-size: 30px;
+  font-size: 23px;
 }
-.profile p {
+.container .about-me .profile p {
   padding: 2%;
   font-size: 20px;
 }
-section .education .ed {
+.container section .education .ed {
   border: 1px solid green;
   display: flex;
   flex-direction: row;
-  padding: 2%;
-}
-section .education .ed .ed1 {
-  border: 1px solid blue;
-  width: 49%;
-  padding: 3%;
-}
-section .education .ed .ed1 h1 {
-  font-size: 25px;
-}
-section .education .ed .ed1 h2 {
-  font-size: 24px;
-}
-section .education .ed .ed1 p {
-  font-size: 20px;
-}
-section .education .ed .ed2 {
-  border: 1px solid blue;
-  width: 49%;
-  padding: 3%;
-}
-section .education .ed .ed2 h1 {
-  font-size: 25px;
-}
-section .education .ed .ed2 h2 {
-  font-size: 24px;
-}
-section .education .ed .ed2 p {
-  font-size: 20px;
-}
-section .work {
-  border: 1px solid black;
+  justify-content: space-evenly;
   margin: 0px auto;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .container section .education .ed {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container section .education .ed .ed1 {
+  border: 1px solid green;
+  background-color: gold;
+  border-radius: 5%;
+  width: 49%;
+  padding: 3%;
+}
+.container section .education .ed .ed1 h1 {
+  font-size: 25px;
+}
+.container section .education .ed .ed1 h2 {
+  font-size: 23px;
+}
+.container section .education .ed .ed1 p {
+  font-size: 20px;
+}
+.container section .education .ed .ed2 {
+  border: 1px solid green;
+  background-color: gold;
+  border-radius: 5%;
+  width: 49%;
+  padding: 3%;
+}
+.container section .education .ed .ed2 h1 {
+  font-size: 25px;
+}
+.container section .education .ed .ed2 h2 {
+  font-size: 23px;
+}
+.container section .education .ed .ed2 p {
+  font-size: 20px;
+}
+.container section .work .wk {
+  border: 1px solid green;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0px auto;
+  width: 100%;
 }
-section .work .work1 {
-  border: 1px solid black;
+@media (max-width: 500px) {
+  .container section .work .wk {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+  }
 }
-section .work .work1 h1 {
+.container section .work .wk .work1 {
+  border: 1px solid green;
+  background-color: gold;
+  border-radius: 5%;
+  width: 49%;
+  padding: 3%;
+}
+.container section .work .wk .work1 h1 {
   font-size: 25px;
 }
-section .work .work1 h2 {
-  font-size: 24px;
+.container section .work .wk .work1 h2 {
+  font-size: 23px;
 }
-section .work .work1 ul {
+.container section .work .wk .work1 ul {
+  list-style-type: circle;
   font-size: 20px;
 }
-section .work .work2 {
-  border: 1px solid black;
+.container section .work .wk .work2 {
+  border: 1px solid green;
+  background-color: gold;
+  border-radius: 5%;
+  width: 49%;
+  padding: 3%;
 }
-section .work .work2 h1 {
+.container section .work .wk .work2 h1 {
   font-size: 25px;
 }
-section .work .work2 h2 {
-  font-size: 24px;
+.container section .work .wk .work2 h2 {
+  font-size: 23px;
 }
-section .work .work2 ul {
+.container section .work .wk .work2 ul {
+  list-style-type: circle;
   font-size: 20px;
 }
-section .myskills {
+.container section .myskills {
+  border: 1px solid green;
+  background-color: #5cb9b9;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 100%;
   border: 1px solid black;
+  padding: 2%;
 }
-section .myskills h2 {
-  font-size: 24px;
+.container section .myskills h2 {
+  font-size: 23px;
 }
-section .myskills ul {
+.container section .myskills ul {
+  list-style-type: circle;
   font-size: 20px;
 }
-section .contact {
-  border: 1px solid black;
+.container footer {
+  border: 1px solid green;
+  background-color: #5cb9b9;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 100%;
 }
-section .contact h2 {
-  font-size: 24px;
+.container footer .contact h2 {
+  font-size: 25px;
+  margin-left: 4%;
 }
-section .contact ul {
+.container footer .contact ul {
+  margin-left: 4%;
   font-size: 20px;
 }
