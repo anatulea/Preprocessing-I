@@ -351,7 +351,7 @@ body {
   display: flex;
   flex-direction: column;
   .container {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
   }
   .container #profile-pic {
@@ -408,6 +408,8 @@ body {
     flex-direction: column;
     margin: 0px auto;
     width: 100%;
+    width: 50%;
+    display: block;
   }
   .container .about-me .profile {
     border: 1px solid brown;
@@ -425,11 +427,13 @@ body {
   }
   .container .education .ed {
     border: 1px solid green;
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0px auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .container .education .ed .ed1 {
     border: 1px solid green;
@@ -465,11 +469,13 @@ body {
   }
   .container section .work .wk {
     border: 1px solid green;
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0px auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .container section .work .wk .work1 {
     border: 1px solid green;
@@ -505,7 +511,7 @@ body {
     list-style-type: circle;
     font-size: 20px;
   }
-  .container section .myskills {
+  .container .myskills {
     border: 1px solid green;
     background-color: #5cb9b9;
     display: flex;
@@ -515,10 +521,10 @@ body {
     border: 1px solid black;
     padding: 2%;
   }
-  .container section .myskills h2 {
+  .container .myskills h2 {
     font-size: 23px;
   }
-  .container section .myskills ul {
+  .container .myskills ul {
     list-style-type: circle;
     font-size: 20px;
   }
@@ -529,6 +535,7 @@ body {
     flex-direction: column;
     margin: 0px auto;
     width: 100%;
+    display: block;
   }
   .container footer .contact h2 {
     font-size: 25px;

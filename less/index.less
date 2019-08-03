@@ -402,8 +402,8 @@ body {
 
 
 	.container {
-		width: 500px;
-		margin: 0px auto;
+		width: 100%;
+    	margin: 0px auto;
 
 
 
@@ -478,6 +478,8 @@ body {
 
 		.about-me {
 			.blockstyle();
+			width: 50%;
+			display: block;
 
 			.profile {
 				border: 1px solid brown;
@@ -500,6 +502,9 @@ body {
 
 			.ed {
 				.boxstyle();
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 
 
 
@@ -542,6 +547,9 @@ body {
 		section .work {
 			.wk {
 				.boxstyle();
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 
 
 				.work1 {
@@ -583,10 +591,13 @@ body {
 			}
 		}
 
-		section .myskills {
+		 .myskills {
 			.blockstyle();
 			border: 1px solid black;
 			padding: 2%;
+			width: 50%;
+			display: block;
+			
 
 			h2 {
 				font-size: @h2size;
@@ -596,13 +607,15 @@ body {
 				list-style-type: circle;
 				font-size: @psize;
 			}
-		}
+		
 
 		footer {
 			.blockstyle();
+			width: 50%;
+			display: block;
 
 			.contact {
-
+				
 				h2 {
 					font-size: @h1size;
 					margin-left: 4%;
