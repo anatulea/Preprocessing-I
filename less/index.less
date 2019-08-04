@@ -136,6 +136,32 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+/*Variables*/
+@font-h1: 'Courgette', cursive;
+@font-p: 'Arapey', serif;
+@size-h1: 1.3rem;
+
+/*Mixins*/
+.single-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.two-box {
+	display: flex;
+	flex-direction: column;
+	width: 49%;
+}
+
+.two-box-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -143,19 +169,24 @@ table {
 html,
 body {
 	height: 100%;
-	background-color: aqua;
-	
+	background-color: rgb(224, 198, 178)
+
 }
+
 
 .container {
 	width: 800px;
 	margin: 0px auto;
 	
 
+
 	header {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		@media(max-width:500px){
+			flex-direction: column;
+		}
 
 		.left-side {
 			width: 49%;
@@ -172,22 +203,32 @@ body {
 
 				a {
 					text-decoration: none;
-					color: green;
+					color: #118C8B;
 				}
 			}
 
 			h1 {
+				font-family: @font-h1;
 				font-size: 50px;
-				padding: 10%;
-				
+				padding: 20%;
+				color:#F14D49;
+
 			}
 
-			p{
-				padding: 0px;
+			p {
+				font-family: @font-p;
+				padding: 30px 0px 30px 0px;
+				font-size: 1.2rem;
+				color:#F2747B;
+
 			}
 
 			button {
-				padding: 90px 20px 10px 20px;
+				padding: 10px 20px 10px 20px;
+				background-color:#118c8b;
+				border-radius: 15%;
+				border:1px solid #000d29;
+				color:white;
 			}
 
 		}
@@ -201,68 +242,160 @@ body {
 			}
 		}
 	}
-	section{
-		.about-me{
-			border: 1px solid red;
-			.profile{
-				display: flex;
-				flex-direction: column;
-				width: 100%;
+
+	section {
+		.about-me {
+			border-top: 1px solid black;
+			padding: 20px 0px 20px 0px;
+			border-bottom: 1px dashed black;
+			.single-box();
+			@media(max-width:500px){
+				width:50%;
 				margin: 0px auto;
+			}
 
-				h1{
-					font-family: @cursive;
+			.profile {
+				.single-box();
+
+				h1 {
+					font-size: @size-h1;
+					font-family: @font-h1;
+					padding-bottom:20px;
+					color:#F14D49;
 				}
-				p{
+
+				p {
+					font-family: @font-p;
 
 				}
 			}
 		}
-		h1{
-			font-family: @cursive;
+
+		h1 {
+			padding-top: 20px;
+			font-size: @size-h1;
+			font-family: @font-h1;
+			color:#F14D49;
+
+
 		}
-		.education{
-			.ed{
-				.ed1{
+
+		.education {
+
+			.ed {
+				padding-bottom: 20px;
+				border-bottom: 1px dashed black;
+				.two-box-container();
+				@media(max-width:500px){
+					flex-direction: column;
+					margin: 0px auto;
+				}
+
+				.ed1 {
+					.two-box();
+					h2{
+						color: #118C8B;
+					}
+					p{
+						font-family: @font-p;
+					}
+
 
 				}
-				.ed2{
 
+				.ed2 {
+					.two-box();
+					h2{
+						color: #118C8B;
+					}
 				}
 			}
 		}
-		h1{
-			font-family: @cursive;
+
+		h1 {
+			padding-top: 20px;
+			font-size: @size-h1;
+			font-family: @font-h1;
+			color:#F14D49;
+
 		}
-		.work{
-			.wk{
-				.work1{
 
+		.work {
+			padding-bottom: 20px;
+			
+			.wk {
+				.two-box-container();
+				@media(max-width:500px){
+					flex-direction: column;
+					margin: 0px auto;
 				}
-				.work2{
 
+				.work1 {
+					.two-box();
+					h2{
+						color: #118C8B;
+					}
+					p{
+						font-family: @font-p;
+					}
+				}
+
+				.work2 {
+					.two-box();
+					h2{
+						color: #118C8B;
+					}
+					p{
+						font-family: @font-p;
+					}
 				}
 			}
 		}
-		.myskills{
-			h1{
-				font-family: @cursive;
-			}
-			.skills{
-				ul{
 
+
+		.myskills {
+			
+			border-top: 1px dashed black;
+			padding-bottom: 20px;
+
+			.single-box();
+
+			h1 {
+				padding: 20px 0px 20px 0px;
+				font-size: @size-h1;
+				font-family: @font-h1;
+				color:#F14D49;
+
+			}
+
+			.skills {
+
+				ul {
+					
+						font-family: @font-p;
+					
 				}
 			}
 		}
-		footer{
-			.contact{
-				h1{
-					font-family: @cursive;
-				}
-				ul{
 
+		footer {
+			border-top: 1px dashed black;
+
+			.contact {
+
+				h1 {
+					padding: 20px 0px 20px 0px;
+					font-size: @size-h1;
+					font-family: @font-h1;
+					color:#F14D49;
+				}
+
+				ul {
+					font-family: @font-p;
 				}
 			}
 		}
+
 	}
+
 }

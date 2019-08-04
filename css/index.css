@@ -127,14 +127,31 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+/*Variables*/
+/*Mixins*/
+.single-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.two-box {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.two-box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 * {
   box-sizing: border-box;
 }
-@cursive :font-family: 'Courgette', cursive;
 html,
 body {
   height: 100%;
-  background-color: #f3f3a4;
+  background-color: #e0c6b2;
 }
 .container {
   width: 800px;
@@ -144,6 +161,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .container header {
+    flex-direction: column;
+  }
 }
 .container header .left-side {
   width: 49%;
@@ -160,18 +182,26 @@ body {
 }
 .container header .left-side nav a {
   text-decoration: none;
-  color: green;
+  color: #118C8B;
 }
 .container header .left-side h1 {
-  font-size: 40px;
-  padding: 10%;
   font-family: 'Courgette', cursive;
+  font-size: 50px;
+  padding: 20%;
+  color: #F14D49;
 }
 .container header .left-side p {
-  padding: 20px;
+  font-family: 'Arapey', serif;
+  padding: 30px 0px 30px 0px;
+  font-size: 1.2rem;
+  color: #F2747B;
 }
 .container header .left-side button {
   padding: 10px 20px 10px 20px;
+  background-color: #118c8b;
+  border-radius: 15%;
+  border: 1px solid #000d29;
+  color: white;
 }
 .container header .right-side {
   width: 49%;
@@ -180,9 +210,142 @@ body {
 .container header .right-side img {
   width: 100%;
 }
+.container section .about-me {
+  border-top: 1px solid black;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px dashed black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .container section .about-me {
+    width: 50%;
+    margin: 0px auto;
+  }
+}
 .container section .about-me .profile {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
-  margin: 0px auto;
+}
+.container section .about-me .profile h1 {
+  font-size: 1.3rem;
+  font-family: 'Courgette', cursive;
+  padding-bottom: 20px;
+  color: #F14D49;
+}
+.container section .about-me .profile p {
+  font-family: 'Arapey', serif;
+}
+.container section h1 {
+  padding-top: 20px;
+  font-size: 1.3rem;
+  font-family: 'Courgette', cursive;
+  color: #F14D49;
+}
+.container section .education .ed {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container section .education .ed {
+    flex-direction: column;
+    margin: 0px auto;
+  }
+}
+.container section .education .ed .ed1 {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.container section .education .ed .ed1 h2 {
+  color: #118C8B;
+}
+.container section .education .ed .ed1 p {
+  font-family: 'Arapey', serif;
+}
+.container section .education .ed .ed2 {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.container section .education .ed .ed2 h2 {
+  color: #118C8B;
+}
+.container section h1 {
+  padding-top: 20px;
+  font-size: 1.3rem;
+  font-family: 'Courgette', cursive;
+  color: #F14D49;
+}
+.container section .work {
+  padding-bottom: 20px;
+}
+.container section .work .wk {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container section .work .wk {
+    flex-direction: column;
+    margin: 0px auto;
+  }
+}
+.container section .work .wk .work1 {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.container section .work .wk .work1 h2 {
+  color: #118C8B;
+}
+.container section .work .wk .work1 p {
+  font-family: 'Arapey', serif;
+}
+.container section .work .wk .work2 {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.container section .work .wk .work2 h2 {
+  color: #118C8B;
+}
+.container section .work .wk .work2 p {
+  font-family: 'Arapey', serif;
+}
+.container section .myskills {
+  border-top: 1px dashed black;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.container section .myskills h1 {
+  padding: 20px 0px 20px 0px;
+  font-size: 1.3rem;
+  font-family: 'Courgette', cursive;
+  color: #F14D49;
+}
+.container section .myskills .skills ul {
+  font-family: 'Arapey', serif;
+}
+.container section footer {
+  border-top: 1px dashed black;
+}
+.container section footer .contact h1 {
+  padding: 20px 0px 20px 0px;
+  font-size: 1.3rem;
+  font-family: 'Courgette', cursive;
+  color: #F14D49;
+}
+.container section footer .contact ul {
+  font-family: 'Arapey', serif;
 }
