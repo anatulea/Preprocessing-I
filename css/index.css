@@ -246,6 +246,12 @@ body {
   font-family: 'Courgette', cursive;
   color: #F14D49;
 }
+@media (max-width: 500px) {
+  .container section h1 {
+    width: 50%;
+    margin: 0px auto;
+  }
+}
 .container section .education .ed {
   padding-bottom: 20px;
   border-bottom: 1px dashed black;
@@ -255,14 +261,21 @@ body {
 }
 @media (max-width: 500px) {
   .container section .education .ed {
+    display: flex;
     flex-direction: column;
     margin: 0px auto;
+    width: 50%;
   }
 }
 .container section .education .ed .ed1 {
   display: flex;
   flex-direction: column;
   width: 49%;
+}
+@media (max-width: 500px) {
+  .container section .education .ed .ed1 {
+    width: 100%;
+  }
 }
 .container section .education .ed .ed1 h2 {
   color: #118C8B;
@@ -275,52 +288,74 @@ body {
   flex-direction: column;
   width: 49%;
 }
-.container section .education .ed .ed2 h2 {
-  color: #118C8B;
+@media (max-width: 500px) {
+  .container section .education .ed .ed2 {
+    width: 100%;
+  }
+  .container section .education .ed .ed2 h2 {
+    color: #118C8B;
+  }
 }
-.container section h1 {
+.container section .education h1 {
   padding-top: 20px;
   font-size: 1.3rem;
   font-family: 'Courgette', cursive;
   color: #F14D49;
 }
-.container section .work {
-  padding-bottom: 20px;
+@media (max-width: 500px) {
+  .container section .education h1 {
+    width: 50%;
+    margin: 0px auto;
+  }
 }
-.container section .work .wk {
+.container section .education .work .wk {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .container section .work .wk {
+  .container section .education .work .wk {
+    display: flex;
     flex-direction: column;
     margin: 0px auto;
+    width: 50%;
   }
 }
-.container section .work .wk .work1 {
+.container section .education .work .wk .work1 {
   display: flex;
   flex-direction: column;
   width: 49%;
 }
-.container section .work .wk .work1 h2 {
+@media (max-width: 500px) {
+  .container section .education .work .wk .work1 {
+    width: 100%;
+  }
+}
+.container section .education .work .wk .work1 h2 {
   color: #118C8B;
 }
-.container section .work .wk .work1 p {
+.container section .education .work .wk .work1 p {
   font-family: 'Arapey', serif;
 }
-.container section .work .wk .work2 {
+.container section .education .work .wk .work2 {
   display: flex;
   flex-direction: column;
   width: 49%;
 }
-.container section .work .wk .work2 h2 {
+@media (max-width: 500px) {
+  .container section .education .work .wk .work2 {
+    width: 100%;
+  }
+}
+.container section .education .work .wk .work2 h2 {
   color: #118C8B;
 }
-.container section .work .wk .work2 p {
+.container section .education .work .wk .work2 p {
   font-family: 'Arapey', serif;
 }
-.container section .myskills {
+.container section .education .myskills {
   border-top: 1px dashed black;
   padding-bottom: 20px;
   display: flex;
@@ -328,24 +363,36 @@ body {
   justify-content: center;
   width: 100%;
 }
-.container section .myskills h1 {
+@media (max-width: 500px) {
+  .container section .education .myskills {
+    width: 50%;
+    margin: 0px auto;
+  }
+}
+.container section .education .myskills h1 {
   padding: 20px 0px 20px 0px;
   font-size: 1.3rem;
   font-family: 'Courgette', cursive;
   color: #F14D49;
 }
-.container section .myskills .skills ul {
+.container section .education .myskills .skills ul {
   font-family: 'Arapey', serif;
 }
-.container section footer {
+.container section .education footer {
   border-top: 1px dashed black;
 }
-.container section footer .contact h1 {
+@media (max-width: 500px) {
+  .container section .education footer {
+    width: 50%;
+    margin: 0px auto;
+  }
+}
+.container section .education footer .contact h1 {
   padding: 20px 0px 20px 0px;
   font-size: 1.3rem;
   font-family: 'Courgette', cursive;
   color: #F14D49;
 }
-.container section footer .contact ul {
+.container section .education footer .contact ul {
   font-family: 'Arapey', serif;
 }
