@@ -342,110 +342,116 @@ body {
 				}
 
 			}
+		}
 
-			.work {
-				.wk {
-					padding-bottom: 20px;
-					border-bottom: 1px dashed black;
-					.two-box-container();
+
+		.work {
+
+			.wk {
+				padding-bottom: 20px;
+				border-bottom: 1px dashed black;
+				.two-box-container();
+
+				@media(max-width:500px) {
+					display: flex;
+					flex-direction: column;
+					margin: 0px auto;
+					width: 50%;
+				}
+
+				.work1 {
+					.two-box();
 
 					@media(max-width:500px) {
-						display: flex;
-						flex-direction: column;
-						margin: 0px auto;
-						width: 50%;
+						width: 100%;
 					}
 
-					.work1 {
-						.two-box();
+					h2 {
+						color: #118C8B;
+					}
 
-						@media(max-width:500px) {
-							width: 100%;
-						}
+					ul {
+						font-family: @font-p;
+					}
+
+
+				}
+
+				.work2 {
+					.two-box();
+
+					@media(max-width:500px) {
+						width: 100%;
 
 						h2 {
 							color: #118C8B;
 						}
 
-						p {
+						ul {
 							font-family: @font-p;
 						}
-					}
 
-					.work2 {
-						.two-box();
-
-						@media(max-width:500px) {
-							width: 100%;
-						}
-
-						h2 {
-							color: #118C8B;
-						}
-
-						p {
-							font-family: @font-p;
-						}
 					}
 				}
 			}
+		}
 
+		.myskills {
 
-			.myskills {
+			border-top: 1px dashed black;
+			padding-bottom: 20px;
 
-				border-top: 1px dashed black;
-				padding-bottom: 20px;
+			.single-box();
 
-				.single-box();
+			@media(max-width:500px) {
+				width: 50%;
+				margin: 0px auto;
+			}
 
-				@media(max-width:500px) {
-					width: 50%;
-					margin: 0px auto;
+			h1 {
+				padding: 20px 0px 20px 0px;
+				font-size: @size-h1;
+				font-family: @font-h1;
+				color: #F14D49;
+
+			}
+
+			.skills {
+
+				ul {
+
+					font-family: @font-p;
+
 				}
+			}
+		}
+
+		footer {
+			border-top: 1px dashed black;
+
+			@media(max-width:500px) {
+				width: 50%;
+				margin: 0px auto;
+			}
+
+			.contact {
+
 
 				h1 {
 					padding: 20px 0px 20px 0px;
 					font-size: @size-h1;
 					font-family: @font-h1;
 					color: #F14D49;
-
 				}
 
-				.skills {
-
-					ul {
-
-						font-family: @font-p;
-
-					}
+				ul {
+					font-family: @font-p;
 				}
 			}
-
-			footer {
-				border-top: 1px dashed black;
-
-				@media(max-width:500px) {
-					width: 50%;
-					margin: 0px auto;
-				}
-
-				.contact {
-
-
-					h1 {
-						padding: 20px 0px 20px 0px;
-						font-size: @size-h1;
-						font-family: @font-h1;
-						color: #F14D49;
-					}
-
-					ul {
-						font-family: @font-p;
-					}
-				}
-			}
-
 		}
+
+
+
 
 	}
 }
